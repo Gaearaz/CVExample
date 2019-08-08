@@ -1,0 +1,229 @@
+/* Se manejan con class */
+
+.container {  
+    margin: 10px;  
+}
+.heading {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-top: 10px;
+}
+.content {
+  max-width: 842px;
+  max-height: 1267px;
+  margin: auto;
+}
+/* 
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
+} */
+
+.row {
+  clear:both;
+      display: flex;
+ }
+    
+.column {
+  clear: both;
+      flex: 50%;
+}
+.iconTitles {
+  font-family: 'Oswald',sans-serif;
+  color:#00695C;
+  font-size: 15px;
+}
+
+/* .font-effect-shadow-multiple {
+  font-family: 'Oswald', serif;
+  color: whitesmoke;
+} */
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-26 { font-size: 26px;
+  color:#00695C;
+}
+.material-icons.md-34 { font-size: 34px; 
+color:#00695C;
+padding-right: 8px;
+float: left;}
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons {
+  color: #80C4BD;
+  /* font-size: 12px; */
+    /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+  .customTitle {
+    font-family: 'Oswald', bold;
+    font-size: 35px;
+    padding-top: 15px;
+    line-height: 11px;  
+    color: white;
+} 
+.normalText{
+  padding-left: 187px;
+  font-family: 'Roboto',thin;
+  font-size: 14px;
+  color:white;
+  float: both;
+}
+.introText{
+  margin: -25px;
+  margin-left: 215px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.customSubtitle{
+  font-family: 'Roboto',serif;
+  font-size: 17.2px;
+}
+
+.childdiv{
+  position: relative;
+  margin-top:100px;
+}
+
+.childdiv .col {
+  margin: 0 !important;
+  max-width: 49%;
+  padding-right: 1%;
+  display: inline-block;
+}
+
+.childdiv .col3 {
+  margin: 0 !important;
+  width: 32%;
+  padding-right: 1%;
+  display: inline-block;
+}
+
+.childdiv .col.left,
+.childdiv .col3.left {
+  float:left;
+}
+
+.childdiv .col.right,
+.childdiv .col3.right {
+  float:right;
+}
+
+/* A partir de aquí se manejan con ID */
+#paddingDavid {  
+
+   margin-top: 25px;
+   margin-left: 35px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 202px;
+  /* padding-top: 25px;   */
+  /* padding-left: 35px;   */
+  /* font-size: 16px;     */
+}
+#paddingPrincipalText {   
+  padding-left: 219px;  
+  font-size: 19px;
+  color: whitesmoke;  
+  float: both;
+}
+#headerCustomized {
+  /* color: green;   */
+  background: #00897B;
+  height: 175px;
+  width: 842px;
+} 
+  img{
+    float: left;
+  }
+
+
+h1 {  
+    color: black;  
+}  
+
+p {  
+  margin:30px;  
+}  
+div {  
+    margin: 10px;  
+}
+/* ----------------------POPUP AREA------------------------ */
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* BAR POP UP AREA */
+
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
